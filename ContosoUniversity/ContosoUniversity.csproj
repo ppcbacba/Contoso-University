@@ -144,6 +144,10 @@
     <Compile Include="Migrations\202002191348457_InitialCreate.designer.cs">
       <DependentUpon>202002191348457_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002191401134_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202002191401134_ComplexDataModel.designer.cs">
+      <DependentUpon>202002191401134_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Department.cs" />
@@ -215,6 +219,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202002191348457_InitialCreate.resx">
       <DependentUpon>202002191348457_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002191401134_ComplexDataModel.resx">
+      <DependentUpon>202002191401134_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
