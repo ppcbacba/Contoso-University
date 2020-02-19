@@ -8,7 +8,7 @@
 
 <div>
     <h4>Student</h4>
-    <hr />
+    <hr/>
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.LastName)
@@ -33,6 +33,7 @@
         <dd>
             @Html.DisplayFor(model => model.EnrollmentDate)
         </dd>
+        @* 以下是导航属性的代码，注意模型内的集合导航属性，和这里对应 *@
         <dd>
             <table class="table">
                 <tr>
@@ -56,6 +57,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new {id = Model.ID}) |
     @Html.ActionLink("Back to List", "Index")
 </p>
