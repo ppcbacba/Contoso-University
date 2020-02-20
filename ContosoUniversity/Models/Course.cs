@@ -7,13 +7,14 @@ namespace ContosoUniversity.Models
     public class Course
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Display(Name = "Number")]
+        [Display(Name = "课程编码")]
         public int CourseID { get; set; }
 
-        [StringLength(50, MinimumLength = 3)]
+        [StringLength(50, MinimumLength = 3),Display(Name = "课程名称")]
         public string Title { get; set; }
 
         [Range(0, 5)]
+        [Display(Name = "注册人数")]
         public int Credits { get; set; }
 
         public int DepartmentID { get; set; }
